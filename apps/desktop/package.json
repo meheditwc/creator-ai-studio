@@ -1,0 +1,15 @@
+{
+  "name": "@creator-ai/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^28.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}

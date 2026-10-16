@@ -1,1 +1,28 @@
-{"description": "Open-source AI workspace for creators, powered by Codex and FreeLLMAPI", "devDependencies": {"@types/node": "^20.0.0", "typescript": "^5.0.0"}, "license": "Apache-2.0", "name": "open-creator-ai", "private": false, "scripts": {"daemon:dev": "pnpm --filter @opencreator/daemon dev", "desktop:dev": "pnpm --filter @opencreator/desktop dev", "test": "pnpm test", "typecheck": "pnpm typecheck", "web:dev": "pnpm --filter @opencreator/web dev"}, "version": "0.1.0"}
+{
+  "name": "creator-ai-studio",
+  "version": "0.1.0",
+  "description": "Open-source AI workspace for creators, powered by Codex and FreeLLMAPI",
+  "license": "Apache-2.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "web:dev": "pnpm --filter @creator-ai/web dev",
+    "daemon:dev": "pnpm --filter @creator-ai/daemon dev",
+    "desktop:dev": "pnpm --filter @creator-ai/desktop dev",
+    "test": "pnpm test",
+    "typecheck": "pnpm typecheck",
+    "build": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.15.0"
+  }
+}

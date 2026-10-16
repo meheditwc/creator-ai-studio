@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.runtime/
+.vscode/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
+.DS_Store
+*.blend
+*.mp4
+*.png
+*.jpg
+*.jpeg
