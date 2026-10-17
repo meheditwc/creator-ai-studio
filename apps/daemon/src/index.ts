@@ -9,8 +9,10 @@ const app = Fastify({ logger: true })
 const dbPath = process.env.OPENCREATOR_DATA_DIR || '.runtime'
 
 async function initDb() {
+  const dbFile = resolve(dbPath, 'app.sqlite')
+  console.log(`Opening SQLite database at: ${dbFile}`)
   const db = await open({
-    filename: resolve(dbPath, 'app.sqlite'),
+    filename: dbFile,
     driver: sqlite3.Database,
   })
 

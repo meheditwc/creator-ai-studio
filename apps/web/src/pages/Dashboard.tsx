@@ -2,12 +2,10 @@ import React from 'react'
 import { Card } from '../components/Card'
 import { StatCard } from '../components/StatCard'
 import { Button } from '../components/Button'
-import { useProjects } from '../hooks/useProjects'
+import { useProjects } from '../hooks/ProjectProvider'
 
 export function Dashboard() {
-  const { projects, loading } = useProjects()
-
-  if (loading) return <div className="text-center py-8">Loading...</div>
+  const { projects } = useProjects()
 
   return (
     <div className="mb-8">

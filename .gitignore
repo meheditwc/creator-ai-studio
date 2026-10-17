@@ -9,6 +9,8 @@ build/
 .env.test
 .env.production
 *.log
+*.out
+pnpm-lock.yaml
 .DS_Store
 *.blend
 *.mp4

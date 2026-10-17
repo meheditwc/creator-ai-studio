@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: 255 255 255;
-  --foreground: 0 0 0;
+  --background: 248 250 252;
+  --foreground: 15 23 42;
   --card: 255 255 255;
-  --border: 214 222 238;
+  --border: 209 213 219;
   --primary: 59 130 246;
   --accent: 14 165 233;
 }
 
 .dark {
   --background: 15 23 42;
-  --foreground: 255 255 255;
+  --foreground: 248 250 252;
   --card: 30 41 59;
   --border: 51 65 85;
   --primary: 99 102 241;
@@ -36,4 +36,15 @@ body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
   transition: background-color 0.2s, color 0.2s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }

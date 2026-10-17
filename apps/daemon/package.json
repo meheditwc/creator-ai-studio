@@ -2,13 +2,15 @@
   "name": "@creator-ai/daemon",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc"
   },
   "dependencies": {
     "fastify": "^5.0.0",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.0",
+    "sqlite": "^5.1.1"
   },
   "devDependencies": {
     "tsx": "^4.0.0",
